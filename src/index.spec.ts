@@ -20,3 +20,22 @@ describe("Else return Fizz", () => {
     expect(fizzBuzz(6)).toEqual("Fizz");
   });
 });
+
+describe("if multiple of five return Buzz", () => {
+  it("Should return 'Buzz' if n is a multiple of 5", () => {
+    expect(fizzBuzz(5)).toEqual("Buzz");
+  });
+
+  it("Should return 'Buzz' if n is a multiple of 5", () => {
+    expect(fizzBuzz(10)).toEqual("Buzz");
+  });
+});
+
+describe("if multiple of five and three return FizzBuzz", () => {
+  it("Should return 'Buzz' if n is a multiple of 5 and 3", () => {
+    expect(fizzBuzz(15)).toEqual("FizzBuzz");
+  });
+  it("Should return 'Buzz' if n is a multiple of 5 and 3", () => {
+    expect(fizzBuzz(30)).toEqual("FizzBuzz");
+  });
+});
